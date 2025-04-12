@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TP2543 Web Programming Deliverables</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    h2, h3, h6{
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    }
+    html {
+      scroll-behavior: smooth; /* Enables smooth scrolling */
+    }
+    .container-fluid {
+      padding: 100px 200px;
+    }
+    .bg-success, .bg-warning {
+      background-color: transparent;
+      color: #fff;
+    }
+    .container-fluid.bg-success {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url('http://lrgs.ftsm.ukm.my/users/a194855/mainbg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .img-responsive {
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+      margin: 20px 0;
+    }
+    .bg-primary {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
+      border-top: 1px solid #444;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .margin {
+      margin-bottom: 50px;
+    }
+    .thumbnail {
+      border: none;
+      background-color: #111;
+      padding: 20px;
+      box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .thumbnail:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 45px rgba(255, 255, 255, 0.6);
+    }
+    .btn-primary, .btn-default {
+      background-color: #fff;
+      border: none;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+    .btn-primary:hover, .btn-default:hover {
+      background-color: #ccc;
+      color: #000;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+    }
+    .btn-default {
+      background-color: #fff;
+      color: #000;
+    }
+    .glowing-border {
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    footer {
+      font-size: 14px;
+      padding-top: 15px;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 50px;
+      align-items: center;
+      border-bottom: 1px solid #fff;
+    }
+    .navbar img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    .navbar a:hover {
+      color: #ccc;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 1);
+    }
+    .navbar .logo {
+      margin-right: auto;
+    }
+    .navbar .links {
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <img src="http://lrgs.ftsm.ukm.my/users/a194855/mypic.jpg" class="glowing-border logo" alt="Profile Logo">
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#lab">Laboratory</a>
+    <a href="#assignment">Assignment</a>
+    <a href="#project">Project</a>
+  </div>
+</div>
+
+<!-- Header -->
+<div id="about" class="container-fluid text-center bg-success">
+  <h2 class="margin">TP2543 Web Programming Deliverables</h2>
+  <img src="http://lrgs.ftsm.ukm.my/users/a194855/mypic.jpg" width="200" height="200" class="img-responsive margin" alt="Profile Picture">
+  <h3>A194855 - ERVIN KUMAR</h3>
+</div>
+
+<!-- Lab Section -->
+<div id="lab" class="container-fluid text-center">
+  <h2 class="margin">Let's Connect</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>About Me</h3>
+          <p>Let's get to know me better</p>
+          <p><a href="http://lrgs.ftsm.ukm.my/users/a194855/hi.html" class="btn btn-primary">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>LinkedIn</h3>
+          <p>Connect with me professionally</p>
+          <p><a href="https://www.linkedin.com/in/ervin-kumar-227a01284/" class="btn btn-primary">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <h3>Github</h3>
+          <p>Take a look at my projects</p>
+          <p><a href="https://github.com/SADMASK69" class="btn btn-primary">
+            <span class="glyphicon glyphicon-zoom-in"></span> Open</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Assignment Section -->
+<div id="assignment" class="container-fluid text-center bg-success">
+  <h2 class="margin">Assignment</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Assignment #1</h3>
+      <p>Create a HTML form for UKM’s Student Web Hosting Registration.</p>
+      <a href="#" class="btn btn-default">
+        <span class="glyphicon glyphicon-zoom-in"></span> View
+      </a>
+    </div>
+
+    <div class="col-md-6">
+      <h3>Assignment #2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <a href="#" class="btn btn-default">
+        <span class="glyphicon glyphicon-zoom-in"></span> View
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Project Section -->
+<div id="project" class="container-fluid text-center d-flex align-items-center justify-content-center" style="height: 100vh;">
+  <div>
+    <h2 class="margin">Project</h2>
+    <p class="margin">Develop a web-based back office system for a company that sells ???. Describe your project here.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center mb-4">
+        <p>Project Task #1 - HTML</p>
+        <a href="http://lrgs.ftsm.ukm.my/users/a194855/myPT1/index.php" class="btn btn-default">
+          <span class="glyphicon glyphicon-zoom-in"></span> Open
+        </a>
+      </div>
+      <div class="col-md-4 text-center mb-4">
+        <p>Project Task #2 - PHP and Database</p>
+        <a href="http://lrgs.ftsm.ukm.my/users/a194855/pt2/index.php" class="btn btn-default">
+          <span class="glyphicon glyphicon-zoom-in"></span> Open
+        </a>
+      </div>
+      <div class="col-md-4 text-center mb-4">
+        <p>Project Task #3 + Enhancements - JavaScript and Bootstrap</p>
+        <a href="https://lrgs.ftsm.ukm.my/users/a194855/pt3/login.php" class="btn btn-default">
+          <span class="glyphicon glyphicon-zoom-in"></span> Open
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-primary text-center">
+  <p>Copyright © Ervin Sdn. Bhd. 2024</p>
+</footer>
+
+</body>
+</html>
